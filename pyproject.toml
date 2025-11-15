@@ -1,0 +1,16 @@
+[project]
+name = "signate-challenges"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "mypy>=1.18.2",
+    "pytest>=9.0.1",
+    "ruff>=0.14.5",
+]
