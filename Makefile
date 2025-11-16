@@ -6,6 +6,12 @@ KERNEL_NAME := $(PROJECT_NAME)
 PYTHON := uv run python
 
 # ===============================
+# Challenge Settings
+# ===============================
+CHALLENGE := mnist
+NOTEBOOK_DIR := challenges/$(CHALLENGE)/notebook
+
+# ===============================
 # Environment Setup
 # ===============================
 
@@ -58,10 +64,10 @@ test:
 # Jupyter
 # ===============================
 notebook:
-	uv run jupyter notebook
+	uv run jupyter notebook $(NOTEBOOK_DIR)
 
 lab:
-	uv run jupyter lab
+	uv run jupyter lab $(NOTEBOOK_DIR)
 
 # ===============================
 # Utility
